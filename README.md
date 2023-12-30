@@ -325,3 +325,32 @@ Recap
 - Big O notations can give us a high level understanding of the time or space complexity of an algorithm.
 - Big O notations doesn't care about precision, only about general trends(linear, quadratic, constant).
 - The time or space complexity depends only on the algorithm, not the hardware used to run the algorithm.
+
+# Analysing Performance of Arrays and Objects
+
+Objects - unordered, key value pairs
+
+Big O of Objects
+Insertion - O(1)
+Removal - O(1)
+Searching - O(N)
+Access - O(1)
+
+When you don't need any ordering, objects are an excellent choice.
+
+Big O of Object Methods
+
+Object.keys - O(N)
+Object.values - O(N)
+Object.entires - O(N)
+hasOwnProperty - O(1)
+
+Arrays - Ordered lists
+
+Big O of Arrays
+Insertion - It depends...
+Removal - It depends...
+Searching - O(N)
+Access - O(1)
+
+# Problem Solving Approach
