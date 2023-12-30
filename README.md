@@ -12,5 +12,5 @@ Less memory-intensive?
 More readable?
 
 Focus on evaluting speed and less memory
-$Add
-$Add_Timing
+$Add.js
+$Add_Timing.js
