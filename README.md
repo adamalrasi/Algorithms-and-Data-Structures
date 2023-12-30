@@ -3,9 +3,6 @@ Learning Algorithms and Data Structures with JavaScript
 
 # Big O Notation
 
-An Example
-- Supoose we want to write a function that calculates the sum of all numbers from 1 up to (and including) some number n.
-
 What does better mean?
 Faster?
 Less memory-intensive?
@@ -135,3 +132,196 @@ Big O Shorthands
 
 ![Alt text](bigONotation.png)
 
+Question 1:
+Determine the time complexity for the following function 
+
+function logUpTo(n) {
+    for (var i = 1; i <= n; i++) {
+        console.log(i);
+    }
+}
+Time complexity: O(n)
+
+Question 2:
+Determine the time complexity for the following function 
+
+function logAtMost10(n) {
+    for (var i = 1; i <= Math.min(n, 10); i++) {
+        console.log(i);
+    }
+}
+Time complexity: O(1)
+
+Question 3:
+Determine the time complexity for the following function
+
+function logAtLeast10(n) {
+    for (var i = 1; i <= Math.max(n, 10); i++) {
+        console.log(i);
+    }
+}
+Time complexity: O(n)
+
+Question 4:
+Determine the time complexity for the following function
+
+function onlyElementsAtEvenIndex(array) {
+    var newArray = Array(Math.ceil(array.length / 2));
+    for (var i = 0; i < array.length; i++) {
+        if (i % 2 === 0) {
+            newArray[i / 2] = array[i];
+        }
+    }
+    return newArray;
+}
+Time complexity: O(n)
+
+Question 5:
+Determine the time complexity for the following function
+
+function subtotals(array) {
+    var subtotalArray = Array(array.length);
+    for (var i = 0; i < array.length; i++) {
+        var subtotal = 0;
+        for (var j = 0; j <= i; j++) {
+            subtotal += array[j];
+        }
+        subtotalArray[i] = subtotal;
+    }
+    return subtotalArray;
+}
+Time complexity: Nested Loop O(n2)
+
+Space Complexity in JS
+- Most primitives(booleans, numbers, undefined, null) are constant space
+- Strings require O(n) space (where n is the string length)
+- Reference types are generally O(n), where n is the length (for arrays) or the number of keys (for objects)
+
+Example:
+function sum(arr) {
+    let total = 0;
+    for (let i = 0; i < arr.length; i++){
+        total += arr[i];
+    }
+    return total;
+}
+Time complexity: O(n)
+
+(total = 0)
+1 number
+1 number
+Space complexity: 0(1)
+
+Another Example:
+function double(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++){
+        newArr.push(2 * arr[i]);
+    }
+    return newArr;
+}
+Time complexity: O(n)
+n numbers
+Space complexity: O(n)
+
+Question 1:
+Determine the space complexity for the following function  
+
+function logUpTo(n) {
+    for (var i = 1; i <= n; i++) {
+        console.log(i);
+    }
+}
+Space Complexity: O(1)
+
+Question 2:
+Determine the space complexity for the following function  
+
+function logAtMost10(n) {
+    for (var i = 1; i <= Math.min(n, 10); i++) {
+        console.log(i);
+    }
+}
+Space Complexity: O(1)
+
+Question 3:
+Determine the space complexity for the following function  
+
+function logAtMost10(n) {
+    for (var i = 1; i <= Math.min(n, 10); i++) {
+        console.log(i);
+    }
+}
+Space Complexity: O(1)
+
+Question 4:
+Determine the  space complexity for the following function 
+
+function onlyElementsAtEvenIndex(array) {
+    var newArray = Array(Math.ceil(array.length / 2));
+    for (var i = 0; i < array.length; i++) {
+        if (i % 2 === 0) {
+            newArray[i / 2] = array[i];
+        }
+    }
+    return newArray;
+}
+Space Complexity: O(n)
+
+Question 5:
+Determine the space complexity for the following function
+
+function subtotals(array) {
+    var subtotalArray = Array(array.length);
+    for (var i = 0; i < array.length; i++) {
+        var subtotal = 0;
+        for (var j = 0; j <= i; j++) {
+            subtotal += array[j];
+        }
+        subtotalArray[i] = subtotal;
+    }
+    return subtotalArray;
+}
+Space complexity: O(n)
+
+
+We've encountered some of the most common complexities:
+O(1), O(n), O(n2)
+
+sometimes big O expressions involve more complex mathematical expressions
+
+Logarithms
+Log2(8) = 3 => 2*2*2 = 8
+
+log2(value) = exponent => 2 * exponent = value
+
+We'll omit the 2
+log === log2
+
+The logarithm of a number roughly measures the number of times you can divide that number by 2 before you get a value that's less than or equal to one.
+
+Logarithm Examples:
+8
+8 / 2 = 4
+4 / 2 = 2
+2 / 1 = 1
+log(8) = 3
+
+25
+25 / 2 = 12.5
+12.5 / 2 = 6.25
+6.25 / 2 = 3.125
+3.125 / 2 = 1.5625
+1.5625 / 2 = 0.78125
+log(25) = 4.64
+
+Why care?
+- Certain searchign algorithms have logarithmic time complexity.
+- Efficient sorting algorithms involve logarithms.
+- Recursion sometimes involves logarithmic space complexity.
+
+Recap
+- To analyse the performance of an alogrithm, we use big O notations.
+- Big O notations can give us a high level understanding of the time or space complexity of an algorithm.
+- Big O notations doesn't care about precision, only about general trends(linear, quadratic, constant).
+- The time or space complexity depends only on the algorithm, not the hardware used to run the algorithm.
