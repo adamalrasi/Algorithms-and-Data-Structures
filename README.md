@@ -494,3 +494,23 @@ RECAP
 - Explore concrete examples
 - Break it down
 - Solve/Simplify
+
+
+# Problem Solving Patterns
+
+How do you improve
+1. Devise a plan for solving problems
+2. Master common problem solving patterns
+
+
+Frequency Counters
+- This pattern uses objects or sets to collect values/frequencies of values
+- This can often avoid the need for nested loops or O(n2) operations with arrays / strings
+
+Example:
+
+Write a function called same, which accepts two arrays, The function should return true if every value in the array has it's corresponding value squared in the second array. The frequency fo value must be the same.
+
+same([1, 2, 3], [4, 1, 9]) // true
+same([1, 2, 3], [1, 9]) // false
+same([1, 2, 1], [4, 4, 1]) // false (must be same frequency)
