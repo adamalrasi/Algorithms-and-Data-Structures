@@ -469,3 +469,28 @@ function charCount(str){
     // return object
 }
 
+
+Refactoring Questions
+- Can you check the result?
+- Can you derive the result differently?
+- Can you understand it at a glance?
+- Can you use the result or methods for some other problems?
+- Can you improve the performance of your solution?
+- Can you think of other ways to refactor?
+- How have other people solved this problem?
+
+function charCount(str) {
+    const obj = {};
+    for (let i = 0; i < str.length; i++){
+        let char = str[i].toLowerCase();
+        if(/[a-z0-9]/.test(char)) {
+            obj[char] > 0 ? obj[char]++ : obj[char] = 1;
+        }
+    }
+}
+
+RECAP
+- Understand the problem
+- Explore concrete examples
+- Break it down
+- Solve/Simplify
