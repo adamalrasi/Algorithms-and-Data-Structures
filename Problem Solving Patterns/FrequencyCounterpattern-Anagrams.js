@@ -1,3 +1,7 @@
+// Frequency Counters
+// - This pattern uses objects or sets to collect values/frequencies of values
+// - This can often avoid the need for nested loops or O(n2) operations with arrays / strings
+
 // Anagrams
 // Given two strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase or name formed by rearranging the letters of another, sunch as cinema formed from iceman.
 
