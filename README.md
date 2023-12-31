@@ -411,9 +411,9 @@ Example:
 
 Write a function which takes in a string and returns counts of each character in the string.
 
-1. Task: Add up each character in the string, return object with char and count// {a:1, b:2, c:0}
+1. Task: Add up each character in the string, return object with char and count // {a:1, b:2, c:0}
 2. Input: a string "string"
-3. Outputs: number: Count
+3. Outputs: Object{key(char): value(count)} // { a: 1 }
 4. Enought Input: no string? return null
 5. Important labels:
 func charCount()
@@ -434,11 +434,38 @@ function charCount(str){
     // do something
     // return an object with keys(letters and numbers), value(count), only keys found in the str.
 }
+
 function charCount(str){
     // make object 
-    // loop over string, for each char...
-        // if char is a number/letter AND is a key in object, add one to count
-        // if char is a number/letter AND not in object, add it and set value to 1
-        // if char is something else (space, period, etc.) do nothing
+    // loop over str, for each char...
+        // if char is a number/letter AND is a key in object: Add one to count
+        // if char is a number/letter AND not in object: Add it and set value to 1
+        // if char is something else (space, period, etc.): Do nothing
     // return object
 }
+
+Simplify
+- Find the core difficulty in what you're trying to do
+- Temporarily ignore that difficulty
+- Write a simplified solution
+- Then incorporate that difficulty back in
+
+function charCount(str){
+    // make object 
+    const result = {}
+    // loop over str, for each char...
+    for(let i = 0; i < str.length; i++){
+        let char = str[i]
+        // if char is a number/letter AND is a key in object: Add one to count
+        if(result[char] > 0){
+            result[char]++
+        }
+        // if char is a number/letter AND not in object: Add it and set value to 1
+        if(!result[char]) {
+            result.char = 1
+        }
+        // if char is something else (space, period, etc.): Do nothing
+    }
+    // return object
+}
+
