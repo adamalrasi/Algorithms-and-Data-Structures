@@ -354,3 +354,91 @@ Searching - O(N)
 Access - O(1)
 
 # Problem Solving Approach
+
+What is an Algorithm?
+A process or set of steps to accomplish a certain task.
+
+How do you improve?
+1. Devise a plan for solving problems
+2. Master common problem solving patterns
+
+Problem solving 
+- Understand the problem
+- Explore concrete examples
+- Break it down
+- Solve/Simplify
+- Look back and Refactor
+
+Understand the Problem
+1. Can I restate the problem in my own words?
+2. What are the inputs that go into the problem?
+3. What are the outputs that should come from the solutions to the problem?
+4. Can the outputs be determined from the inputs? In other words, do I have enough info to solve the problem?
+5. How should I label the important pieces of data that are a part of the problem?
+
+Example:
+Problem: Write a function which takes two numbers and returns their sum. 
+1. Task: two numbers input, add up the numbers, returns the sum - implement addition
+2. Inputs: two numbers
+- ints?
+- floats?
+- What about string for large numbers?
+3. Outputs: return sum(numbers)
+- int? float? string?
+4. Do we have enough input for output
+- What if we have one number? or no number
+always two numbers
+5. labels for important pieces of data
+- inputs: 
+Func add(numb1, numb2)
+- outputs:
+sum
+
+Explore concrete examples
+- Coming up with examples can help you understand the problem better
+- Examples also provide sanity checks that your eventual solution workds how it should
+- User Stories!
+- Unit Test!
+- Input to Output
+
+Explore Examples
+- Start with Simple examples
+- Progress to More complex examples
+- Explore examples with empty inputs
+- Explore examples with invalid inputs
+
+Example: 
+
+Write a function which takes in a string and returns counts of each character in the string.
+
+1. Task: Add up each character in the string, return object with char and count// {a:1, b:2, c:0}
+2. Input: a string "string"
+3. Outputs: number: Count
+4. Enought Input: no string? return null
+5. Important labels:
+func charCount()
+input string
+count
+
+charCount("aaa") // {a:3, b:0, c:0}
+charCount("hello") // {h:1, e:1, l:2, o:1}
+
+"my phone number is 182763" 
+"Hello hi"
+charCount("") // {}
+
+Break It Down
+- Explicitly write out the steps you need to take.
+
+function charCount(str){
+    // do something
+    // return an object with keys(letters and numbers), value(count), only keys found in the str.
+}
+function charCount(str){
+    // make object 
+    // loop over string, for each char...
+        // if char is a number/letter AND is a key in object, add one to count
+        // if char is a number/letter AND not in object, add it and set value to 1
+        // if char is something else (space, period, etc.) do nothing
+    // return object
+}
