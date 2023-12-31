@@ -519,3 +519,6 @@ Sliding Window
 Divide and Conquer
 - This pattern involves divinding a data set into smaller chuncks and then repeating a process with a subset of data.
 - This pattern ca trmendously descrease time complexity
+
+// Create a Warrior class
+// It must support level, rank, experience, achievements, training(event), and battle(enemy_level) methods
