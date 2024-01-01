@@ -520,5 +520,68 @@ Divide and Conquer
 - This pattern involves divinding a data set into smaller chuncks and then repeating a process with a subset of data.
 - This pattern ca trmendously descrease time complexity
 
-// Create a Warrior class
-// It must support level, rank, experience, achievements, training(event), and battle(enemy_level) methods
+# Recursion
+- A process(a function in our case) that calls itself
+
+The Call Stack
+- It's a stack data structure - we'll talk about that later!
+- Any time a function is invoked it is place(pushed) on the top of the call stack
+
+Base Case
+- The condition when the recursion end
+- This is the most important concept to understand
+
+Two essential parts of recursive function!
+- Base Case
+- Different Input
+
+Our first recursive function:
+
+function countDown(num){
+    if(num <= 0){
+        console.log("All done!")
+        return;
+    }
+    console.log(num);
+    num--;
+    countDown(num);
+}
+
+Our second recursive function
+
+function sumRange(num){
+    if(num === 1) return 1;
+    return num + sumRange(num-1)
+}
+
+Factorial
+4 * 3 * 2 * 1
+Iterative
+function factorial(num){
+    let total = 1;
+    for(let i = num; i > 1; i--){
+        total *= i
+    }
+    return total
+}
+
+Recursive call
+function factorial(num){
+    if(num === 1) return 1
+    return num * factorial(num-1)
+}
+
+Helper Method Recursion
+
+function outer(input){
+    var outerScopedVariable = []
+
+    function helper(helperInput){
+        // modify the outerScopedVariable
+        helper(helperInput--)
+    }
+
+    helper(input)
+
+    return outScopedVariable;
+}
