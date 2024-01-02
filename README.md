@@ -9,8 +9,6 @@ Less memory-intensive?
 More readable?
 
 Focus on evaluting speed and less memory
-$Add.js
-$Add_Timing.js
 
 Rather than counting seconds, which are so variable
 Let's count the number of simple operations the computer has to perform!
