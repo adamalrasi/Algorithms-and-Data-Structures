@@ -534,5 +534,44 @@ Two essential parts of recursive function!
 - Different Input
 
 # Searching Algorithms
-- 
 
+How do we search?
+- Given an array, the simplest way to search for an value is to look at every element in teh array and check if it's the value we want.
+
+JavaScript has search!
+There ar emany different search methods on arrays in JavaScript;
+- indexOf
+- includes
+- find
+- findIndex
+But how do these function work?
+
+Linear Search
+[5, 8, 1, 100, 12, 3, 12]
+                i = true
+
+
+Lnear Search Big O
+
+O(1)
+Best
+
+O(n)
+Average
+
+O(n)
+Worst
+
+
+Binary Search
+- Binary search is much faster form of search
+- Rather than elminating one element at a time, you can eliminate half of the remaining elements at a time
+- Binary search only works on sorted arrays
+
+
+Divide and Conquer
+let's search for 15
+[1, 3, 4, 6, 8, 9, 11, 12, 15, 16, 17, 18, 19]
+ 12, 15, 16, 17, 18, 19
+ 12, 15, 16,
+ 15,
