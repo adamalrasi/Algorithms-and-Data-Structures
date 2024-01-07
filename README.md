@@ -577,5 +577,67 @@ let's search for 15
  15,
 
 
-# Bubble Sort
+# What is sorting?
+- Sorting is the process of rearranging the items in a collection (eg array) so that the items are in some king of order. 
 
+Example:
+- Sorting numbers form smallest to largest
+- sorting based on years
+
+What do we need to learn this?
+- Sorting is an incredibly common task, so it's good to know how it works
+- There are many different way to sort things, and different techniques have their own advantages and disadvantages
+
+Objectives
+- implement bubble sort
+- implement selection sort
+- implement insertion sort
+- Understand the importants
+
+
+Bubble Sort 
+- A sorting algorithm where the largest values bubble up to the top 
+function bubbleSort(arr){
+    let noSwaps;
+    for(let i = arr.length; i > 0; i--){
+        for(let j = 0; j < i - 1; j++){
+            noSwaps = true
+            if(arr[j] > arr[j + 1]){
+                let temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = temp
+                noSwaps = false
+            }
+        }
+        if(noSwaps) break;
+    }
+    return arr
+}
+
+bubbleSort([37, 45, 29, 8])
+
+// Time complexity: (n^2)
+
+Selection Sort
+- Similar to bubble sort, but instead of first placing large values into sorted position, it places small values into sorted position. 
+function selectionSort(arr){
+
+    const swap = (arr, idx1, idx2) => 
+    ([arr[idx1], arr[idx2] = arr[idx2], arr[idx1]]);
+
+    for(let i = 0; i < arr.length; i++){
+        let lowest = i
+        for(let j = i+1; j < arr.length; j++){
+            if(arr[j] < arr[lowest]){
+                lowest = j
+            }
+        }
+        if(i !== lowest) swap(arr, i, lowest)
+    }
+    return arr
+}
+
+selectionSort([34, 22, 10, 19, 17])
+
+Insertion Sort
+- Builds up the sort by gradually creating a larger left half which is always sorted
