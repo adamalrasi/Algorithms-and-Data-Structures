@@ -603,3 +603,27 @@ Selection Sort
 
 Insertion Sort
 - Builds up the sort by gradually creating a larger left half which is always sorted
+
+Merge Sort
+- It's a combination of two things - merging and sorting
+- Exploits the fact that arrays of 0 or 1 element are always sorted
+- Works by decomposing an array into smaller arrays of 0 or 1 elements, then building up a newly sorted array
+
+Quick Sort
+- Like merge sort, exploits the fact that arrays of 0 or 1 element are always sorted;
+- Works by selecting one element (called the pivot)
+- Once the pivot is positioned appropriately, quick sort can be applied on either side of the pivot
+
+Comparison Sorts
+Bubble Sort - O(n^2)
+Insertion Sort - O(n^2)
+Selection Sort - O(n^2)
+Quick Sort - O(n log (n))
+Merge Sort - O(n log (n))
+
+Radix Sort
+- Radix sort is a special sorting algorithm that works on lists of numbers
+- It never makes comparisons between elements
+- it exploits the fact that information about the size of a number is encoded in the number of digits.
+- More digits means a bigger number!
+
