@@ -27,5 +27,4 @@ function quickSort(arr, left=0, right=arr.length-1){
     return arr
 }
 
-
 console.log(quickSort([-1, 2123,4,6,3]))
