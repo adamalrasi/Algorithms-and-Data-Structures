@@ -13,38 +13,6 @@ Focus on evaluting speed and less memory
 Rather than counting seconds, which are so variable
 Let's count the number of simple operations the computer has to perform!
 
-Counting Operations
-
-function addUpTo(n){
-    return n * (n + 1) / 2;
-}
-1 multiplication
-1 addition
-1 division
-
-3 simple operations, regardless of the size of n
-
-
-function addUpTo(n) {
-    let total = 0;
-    for(let i = 1; i <= n; i++){
-        total += i
-    }
-    return total
-}
-    (+=)
-n additions
-n assignments
-    (i++)
-n additions
-n assignments
-    (let total = 0)
-1 assigment
-    (let i = 0)
-1 assigment
-    (i <= n)
-n comparisons
-
 Depending on what we count, the number of operations can be as low as 2n or as hight as 5n + 2 but regardless of the exact number, the number of operations grows roughly proportionally with n
 
 Big O Notation is a way to formalise fuzzy counting
@@ -629,4 +597,21 @@ Radix Sort
 
 # Data Structures
 
+Data structures are collections of values, the relationships among them, and the functions or operations that can be applied to the data.
 
+
+Class Syntax in JS
+
+What is a class?
+- A blueprint for creating objects with pre-defined properties and methods
+
+How we'll be using calsses
+
+class DataStructure(){
+    constructor(){
+        // what default properties should it have?
+    }
+    someInstanceMethods(){
+        // what should each object created from this class be able to do?
+    }
+}
