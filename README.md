@@ -632,3 +632,5 @@ Arrays
 - Indexed in order
 - Insertion and deletion can be expensive
 - Can quickly be accessed at a specific index
+
+![Alt text](image.png)
