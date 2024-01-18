@@ -634,3 +634,13 @@ Arrays
 - Can quickly be accessed at a specific index
 
 ![Alt text](image.png)
+
+What is a Stack?
+- A LIFO data structure Last In, First Out
+- The last element added to the stack will be the first element removed from the stack
+
+![Alt text](image.png)
+
+What is a Queue?
+- A FIFO data structure
+- First In First Out
