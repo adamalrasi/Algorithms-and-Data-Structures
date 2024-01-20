@@ -696,3 +696,29 @@ What is a Priority Queue?
 - A data structure where each element has a priority.
 - Elemenst with higher priorities are served before elements with lower priorities.
 
+Recap
+- Binary heaps are very useful data structures for sorting, and implementing other data structureslike priority queues
+- Binary heaps are either MaxBinaryHeaps or MinBinaryHeaps with parents either being smaller or larger than their children.
+- With just a little bit of math, we can represent heaps using arrays.
+
+# Hash Tables
+
+What is a hash tables?
+- Hash tables are used to store key-value pairs.
+- They are like arrays, but the keys are not ordered.
+- Unlike arrays, hash tables are fast for all of the following operations: finding values, adding new values, and removing values.
+
+Hash function
+
+What makes a good hash?
+- Fast(constant time)
+- Doesn't cluster outputs at specific indices, but distributes uniformly
+- Deterministic(same input yields same output)
+
+Keys/Values
+
+Keys
+1. Loops through the hash table array and returns an array of keys in the table.
+
+Values
+1. Loops through the hash table array and returns an array of values in the table.
