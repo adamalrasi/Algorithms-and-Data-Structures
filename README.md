@@ -644,3 +644,23 @@ What is a Stack?
 What is a Queue?
 - A FIFO data structure
 - First In First Out
+
+# Binary Search Trees
+
+What is a tree?
+- A data structure that consists of nodes in a parent/child relationship.
+
+![Alt text](image.png)
+
+Lists = linear 
+Trees = Nonlinear
+
+Tree Terminology
+
+Root - The top node in a tree.
+Child - A node directly connected to another node when moving away from the root.
+Parent - The converse notion of a child.
+Siblings - A group of nodes with the same parent.
+Leaf - A node with no children.
+Edge - The connection between one node and another.
+
