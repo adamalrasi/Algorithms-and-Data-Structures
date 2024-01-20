@@ -722,3 +722,17 @@ Keys
 
 Values
 1. Loops through the hash table array and returns an array of values in the table.
+
+Recap
+- Hash tables are collections of key value pairs
+- Hash tables can find values quickly given a key
+- Hash tables can add new key values quickly
+- Hash tables store data in a large array, and work by hashing the key
+- A good hash should be fast, distribute keys uniformly, and be deterministic
+- Separate chaining and linear probing are two strategies used to deal with two keys that hash to the same index
+
+## Graphs
+
+What is a Graph?
+- A graph data structure consists of a finite set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph.
+![Alt text](image.png)
