@@ -691,3 +691,8 @@ The right child is stored at 2n + 2
 
 For any child node at index n...
 its parent is at index (n-1)/2 // floored
+
+What is a Priority Queue?
+- A data structure where each element has a priority.
+- Elemenst with higher priorities are served before elements with lower priorities.
+
