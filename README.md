@@ -664,3 +664,30 @@ Siblings - A group of nodes with the same parent.
 Leaf - A node with no children.
 Edge - The connection between one node and another.
 
+
+Traversing a tree
+
+Two ways:
+- Breadth-first search
+- Depth-first search
+
+Recap
+- Trees are non-linear data structure that contain a root and child nodes
+- Binary Trees can have values of any type, but at most two children for each parent
+- Binary Search Trees are a more specific version of binary trees where every node to the left of a parent is less than it's value and every node to the right is greater
+- We can search throuh trees using Breadth First Search and Depth First Search
+
+# Binary Heaps
+ 
+- Very similar to a binary search tree, but with some different rules!
+
+MaxBinaryHeap - parent nodes are always larger than child nodes. 
+MinBinaryHeap - parent nodes are always smaller than child nodes.
+
+Heap
+For any index of an array n...
+The left child is stored at 2n + 1
+The right child is stored at 2n + 2
+
+For any child node at index n...
+its parent is at index (n-1)/2 // floored
