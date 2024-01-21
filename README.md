@@ -736,3 +736,18 @@ Recap
 What is a Graph?
 - A graph data structure consists of a finite set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph.
 ![Alt text](image.png)
+
+Essential Graph terms
+- Vertex - a Node
+- Edge - Connection between nodes
+- Weighted/Unweighted - values assigned to distances between vertices
+- Directed/Undirected - directions assigned to distanced between vertices
+
+
+# Dijkstra's Algorithm
+What is it?
+- Dijkstra - finds the shortest path between two vertices on a graph
+![Alt text](image.png)
+
+# Dynamic Programming
+
