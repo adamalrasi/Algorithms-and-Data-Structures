@@ -750,4 +750,15 @@ What is it?
 ![Alt text](image.png)
 
 # Dynamic Programming
+- A method of solving a complex problem by breaking down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions.
 
+Overlapping Subproblems
+- A problem is said to have overlapping subproblems if it can be broken down into subproblems which are reused several times.
+
+Fibonacci Sequence - Every number after the first two is the sum of the two preceding ones.
+
+Optimal Substructure - A problem is said to have optimal substructure if an optimal solution can be constructed from optimal solutions of its subproblems
+
+Memoization - Storing the results of expensive function calls and returning the cached result when the same inputs occur again.
+
+Tabulation - Storing the result of a previous result in a table, better space complexity can be achieved using tabulation.
